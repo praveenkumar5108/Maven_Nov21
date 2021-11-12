@@ -168,6 +168,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.TestNgListenerExample&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;UserName&quot; value=&quot;abc@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;CorrectPassword&quot; value=&quot;Abc@1234&quot;/&gt;
@@ -215,17 +218,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PositiveLogin')
+data.setCell(0, 1, 'ExcelTest')
 data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 2862);
+data.setCell(0, 3, 3187);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ExcelTest')
+data.setCell(1, 1, 'PositiveLogin')
 data.setCell(1, 2, 'test.LoginTest')
-data.setCell(1, 3, 2592);
+data.setCell(1, 3, 2520);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'NegativeLogin')
 data.setCell(2, 2, 'test.LoginTest')
-data.setCell(2, 3, 2106);
+data.setCell(2, 3, 2260);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -263,43 +266,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">491 ms</span>
+                <span class="method-start">515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ExcelTest</span>
-                <span class="method-start">1892 ms</span>
+                <span class="method-start">2529 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4485 ms</span>
+                <span class="method-start">5717 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4555 ms</span>
+                <span class="method-start">5790 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">NegativeLogin(abc@gmail.com, Abc@12673)</span>
-                <span class="method-start">5903 ms</span>
+                <span class="method-start">7565 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">8013 ms</span>
+                <span class="method-start">9826 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8084 ms</span>
+                <span class="method-start">9899 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">PositiveLogin(abc@gmail.com, Abc@1234)</span>
-                <span class="method-start">9409 ms</span>
+                <span class="method-start">11594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">12272 ms</span>
+                <span class="method-start">14116 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">ReportTeardown</span>
-                <span class="method-start">12343 ms</span>
+                <span class="method-start">14184 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

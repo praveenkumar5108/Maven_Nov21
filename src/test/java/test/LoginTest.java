@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -31,8 +32,9 @@ public class LoginTest extends Basecls{
 		//ForgotPassword.click();
 		
 		login.Errorcheck();
-		
 		report.endTest(test);
+		Assert.assertTrue(false);
+
 		
 	}
 	
